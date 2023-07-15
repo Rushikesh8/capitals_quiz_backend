@@ -45,6 +45,7 @@ DEBUG=True
     - In the project root directory, run
 
 ```shell
+python manage.py makemigrations
 python manage.py migrate
 ```
 
