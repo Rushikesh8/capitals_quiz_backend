@@ -10,7 +10,7 @@ The application is designed to minimize the number of API calls to `countriesnow
 
 ## Installation
 
-To run the Capital City Quiz locally, follow these steps:
+To run the Capital Quiz(Backend) locally, follow these steps:
 
 1. Clone the repository:
 
@@ -56,6 +56,16 @@ python manage.py migrate
 ```shell
 python manage.py runserver
 ```
+
+## Running Tests
+
+- To run the test cases for the Capital Quiz, use the following command:
+
+```shell
+pytest capitals/tests.py
+```
+
+
 
 
 
