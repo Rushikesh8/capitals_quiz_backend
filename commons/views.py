@@ -15,5 +15,5 @@ class BaseView(APIView):
         if missing_fields:
             is_or_are = 'are' if len(missing_fields) > 1 else 'is'
             field_string = ", ".join(missing_fields)
-            return ValidationError (f'Field/s {field_string} {is_or_are} missing in the request!')
+            raise ValidationError (f'Field/s {field_string} {is_or_are} missing in the request!')
         return input_data
